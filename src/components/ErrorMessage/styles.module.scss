@@ -1,0 +1,22 @@
+.error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--co-error);
+
+  &Icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  &Message {
+    font-size: 0.875rem;
+  }
+}
+
+@media (width >= 768px) {
+  .errorMessage {
+    font-size: 1.325rem;;
+  }
+}
