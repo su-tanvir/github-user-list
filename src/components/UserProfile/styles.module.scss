@@ -1,0 +1,46 @@
+.root {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.profile {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .img {
+    border-radius: 50%;
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+
+  .info {
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      .name{
+        font-size: 24px;
+        text-transform: uppercase;      
+      }
+    }
+    .username, .bio {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  .profile .img {
+    width: 296px;
+  }
+
+  .info .user:hover { 
+    color: #ffc0c0;
+  }
+}

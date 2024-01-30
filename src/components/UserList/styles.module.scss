@@ -1,0 +1,36 @@
+.root {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.item {
+  padding: 20px;
+  background-color: rgb(15 23 42);
+  border-radius: 8px;
+  border: 1px solid #6e7685;
+  overflow-wrap: break-word;
+
+  p + p {
+    margin-top: 8px;
+  }
+}
+
+@media (width >= 768px) and (width < 1280px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (width >= 1280px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

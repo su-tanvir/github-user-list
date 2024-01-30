@@ -1,0 +1,33 @@
+.root {
+  padding-block: 1rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--co-light);
+  font-size: 2rem;
+  font-weight: 800;
+
+  background-image: linear-gradient(
+    to bottom right,
+    var(--co-primary) 30%,
+    var(--co-secondary) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (width >= 768px) and (width < 1280px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (width >= 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}
