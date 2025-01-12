@@ -38,3 +38,8 @@
 ## Demo
 
 <p align='center'><img src='./doc/demo.png'></p>
+
+## Notes
+- Directory structure based on generic react concepts
+- Avoid making several API calls sequentially. Instead, tried to make them concurrently (throw several requests, one after another, don't wait for one to finish before throwing the next call)
+- Bar chart usage
